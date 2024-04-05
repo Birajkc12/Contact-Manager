@@ -1,0 +1,23 @@
+.contact_list {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px 20px;
+  max-width: 1140px;
+}
+.contact {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.contact_adder {
+  background-color: antiquewhite;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  padding: 20px 20px;
+  max-width: 1140px;
+}
