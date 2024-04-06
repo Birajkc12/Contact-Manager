@@ -20,6 +20,11 @@ const App = () => {
       number: "9841230775",
       location: "Nuwakot",
     },
+    {
+      name: "Hari",
+      number: "9231230775",
+      location: "Jhapa",
+    },
   ];
   return (
     <>
@@ -28,9 +33,9 @@ const App = () => {
       </div>
       <div className="contact_list">
         <h3>Contact List: </h3>
-        <Contact data={ContactDetails[0]} />
-        <Contact data={ContactDetails[1]} />
-        <Contact data={ContactDetails[2]} />
+        {ContactDetails.map((data) => (
+          <Contact data={data}></Contact>
+        ))}
       </div>
     </>
   );

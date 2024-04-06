@@ -6,7 +6,7 @@ const ContactAdder = () => {
   const [location, setLocation] = useState("");
 
   const onClickHandler = () => {
-    alert("Clicked");
+    const contactData = { name: name, location: location, number: number };
   };
 
   return (
