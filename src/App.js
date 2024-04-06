@@ -26,10 +26,14 @@ const App = () => {
       location: "Jhapa",
     },
   ];
+  const addContactData = (contactData) => {
+    ContactDetails.push(contactData);
+    console.log(ContactDetails);
+  };
   return (
     <>
       <div className="contact_adder">
-        <ContactAdder />
+        <ContactAdder onContactAdded={addContactData} />
       </div>
       <div className="contact_list">
         <h3>Contact List: </h3>
