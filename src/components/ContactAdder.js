@@ -1,20 +1,39 @@
 import React, { useState } from "react";
 
 const ContactAdder = () => {
-  const [name, setName] = useState("Raj");
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const [location, setLocation] = useState("");
+
   const onClickHandler = () => {
-    setName("Biraj");
+    alert("Clicked");
   };
+
   return (
-    <>
-      <div className="simpleAdder">
-        Contact Adder:
-        <button onClick={onClickHandler}>Click Me !</button>
-        <div>
-          My Name is {name}.{name === "Biraj" ? "I live in Kathmandu" : ""}
-        </div>
+    <div className="contact_adder">
+      <h2>Contact Adder:</h2>
+      <div className="field">
+        <input
+          type="text"
+          placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Contact"
+          value={number}
+          onChange={(e) => setNumber(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Location"
+          value={location}
+          onChange={(e) => setLocation(e.target.value)}
+        />
       </div>
-    </>
+      <button onClick={onClickHandler}>Add Contact</button>
+    </div>
   );
 };
 
